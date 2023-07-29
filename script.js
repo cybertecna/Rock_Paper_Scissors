@@ -16,12 +16,14 @@ function getComputerChoice() {
     }
 }
 
-let playerSelection = prompt().toLowerCase();
+let playerSelection = " ";
 let computerSelection = getComputerChoice();
-let playerScore = 0 
-let computerScore = 0 
+let playerScore = 0; 
+let computerScore = 0;
 
 function playRound(playerSelection, computerSelection) {
+    computerSelection = getComputerChoice();
+    playerSelection = prompt().toLowerCase()
     let victory = "You win!"
     let lose = "You lose!"
     let paperWins = "Paper beats rock!"
@@ -53,24 +55,46 @@ function playRound(playerSelection, computerSelection) {
     } else {
         return choose
     }
-
   }
    
-//   console.log(playRound(playerSelection, computerSelection));
+
 function game() {
+console.log(playRound(playerSelection, computerSelection))
 
-let youLose = "You lose!"
-let youWin = "You win!"
-let tie = "It's a tie!"
+console.log(playerScore)
+console.log(computerScore)
 
-if (playerScore < computerScore) {
-    return youLose
+console.log(playRound(playerSelection, computerSelection))
+
+console.log(playerScore)
+console.log(computerScore)
+
+console.log(playRound(playerSelection, computerSelection))
+
+console.log(playerScore)
+console.log(computerScore)
+
+console.log(playRound(playerSelection, computerSelection))
+
+console.log(playerScore)
+console.log(computerScore)
+
+console.log(playRound(playerSelection, computerSelection))
+
+console.log(playerScore)
+console.log(computerScore)
+
+let youWon = "You won!"
+let youLost = "You lost!"
+let tie = "It's a tie! Try again!"
+
+if (playerScore < computerScore ) {
+    return youLost
 } else if (playerScore > computerScore) {
-    return youWin
-} else { 
+    return youWon
+} else {
     return tie
 }
-
 }
 
-console.log(game())
+game()
