@@ -89,11 +89,11 @@ let youLost = "You lost!"
 let tie = "It's a tie! Try again!"
 
 if (playerScore < computerScore ) {
-    return youLost
+    console.log(youLost)
 } else if (playerScore > computerScore) {
-    return youWon
+    console.log(youWon)
 } else {
-    return tie
+    console.log(tie)
 }
 }
 
