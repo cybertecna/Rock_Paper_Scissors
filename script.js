@@ -26,6 +26,7 @@ function playRound(playerSelection, computerSelection) {
     let rockWins = "Rock beats scissors!"
     let scissorsWin = "Scissors beat paper!"
     let tie = "It's a tie!"
+    playerSelection.toLowerCase()
 
     if (playerSelection === "rock" && computerSelection === "paper") {
         return lose + " " + paperWins
