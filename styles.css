@@ -1,0 +1,60 @@
+body {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    margin: 0 7em;
+    padding: 0;
+}
+
+.btn {
+    margin: 2em;
+    padding: 8em;
+    background-color: white;
+    border: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 500ms;
+    transform: scale (1)
+
+}
+
+.btn:hover { 
+    cursor: pointer;
+    transform: scale(1.125);
+}
+
+.btn-rock {
+    background-image: url(https://cdn4.iconfinder.com/data/icons/font-awesome-regular/512/hand-rock-512.png);
+}
+
+.btn-paper {
+    background-image: url(https://cdn4.iconfinder.com/data/icons/font-awesome-regular/512/hand-paper-512.png);
+}
+
+.btn-scissors {
+    background-image: url(https://cdn3.iconfinder.com/data/icons/font-awesome-regular-1/512/hand-scissors-512.png)
+}
+
+.scores {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    margin: 0;
+
+}
+
+
+.restart-btn {
+    margin: 0;
+    padding: 1em 2em;
+    background-color: white;
+    color: black;
+    font-size: 1.5rem;
+    border: 1.5px black solid;
+    border-radius: 3px
+}
